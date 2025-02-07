@@ -220,7 +220,7 @@ async function fetcData2() {
   console.log(monthArray);
 
   const labels = monthArray;
-
+  let la = ["2020: januar", "2020: februar"];
   const myData = {
     labels: labels,
     datasets: [

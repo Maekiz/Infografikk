@@ -1,6 +1,9 @@
 #myChart {
   scale: 80%;
 }
+#secondChart {
+  scale: 80%;
+}
 body h1 {
   display: flex;
   justify-content: center;
@@ -10,10 +13,10 @@ body {
   font-family: "ivystyle-sans", sans-serif;
   font-weight: 400;
   font-style: normal;
-  background-color: #E7E9D9;
+  background-color: #e7e9d9;
 }
 
 #car-number {
-  color: #528C62;
+  color: #528c62;
   width: 8vw;
 }
