@@ -176,7 +176,7 @@ async function fetcData() {
           label: "Elektriske personbiler i Norge",
           data: dataArray.map((d) => parseFloat(d)), // Sørg for at dataArray har tall
           fill: false,
-          borderColor: "rgb(51, 187, 85)",
+          borderColor: "#528C62",
           tension: 0.1,
         },
       ],
@@ -256,5 +256,12 @@ async function animation(num) {
 }
 
 function delay(time) {
+<<<<<<< HEAD
+  return new Promise(resolve => setTimeout(resolve, time));
+}
+
+Chart.defaults.font.size = 16;
+=======
   return new Promise((resolve) => setTimeout(resolve, time));
 }
+>>>>>>> ce35f90510640ef2b2e78aa8ed8374db6cfbe2ac
