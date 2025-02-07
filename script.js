@@ -256,12 +256,5 @@ async function animation(num) {
 }
 
 function delay(time) {
-<<<<<<< HEAD
-  return new Promise(resolve => setTimeout(resolve, time));
-}
-
-Chart.defaults.font.size = 16;
-=======
   return new Promise((resolve) => setTimeout(resolve, time));
 }
->>>>>>> ce35f90510640ef2b2e78aa8ed8374db6cfbe2ac
