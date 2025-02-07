@@ -248,65 +248,6 @@ async function fetcData2() {
 fetcData();
 fetcData2();
 
-// fetch(url, {
-//   method: "POST",
-//   headers: {
-//     "Content-Type": "application/json",
-//   },
-//   body: JSON.stringify(query),
-// })
-//   .then((response) => {
-//     if (!response.ok) {
-//       throw new Error(`feil! Status: ${response.status}`);
-//     }
-//     return response.json();
-//   })
-//   .then((data) => {
-//     const dataArray = data.value;
-//     console.log(dataArray);
-
-//     // Sjekk lengden på dataArray før vi prøver å få tilgang til det
-//     if (dataArray.length > 15) {
-//       const lastvalue = dataArray[15];
-//       const secondlastvalue = dataArray[14];
-//       numberElement.innerHTML = lastvalue;
-//       calculatePresentage(secondlastvalue, lastvalue);
-//     } else {
-//       console.warn("dataArray har ikke nok elementer");
-//     }
-
-//     const yearObject = data.dimension.Tid.category.label;
-//     const yearArray = Object.values(yearObject);
-
-//     const labels = yearArray;
-
-//     const myData = {
-//       labels: labels,
-//       datasets: [
-//         {
-//           label: "Elektriske personbiler i Norge",
-//           data: dataArray.map((d) => parseFloat(d)), // Sørg for at dataArray har tall
-//           fill: false,
-//           borderColor: "rgb(51, 187, 85)",
-//           tension: 0.1,
-//         },
-//       ],
-//     };
-
-//     // Sjekk om ctx ikke er null
-//     if (ctx) {
-//       new Chart(ctx, {
-//         type: "line",
-//         data: myData,
-//       });
-//     } else {
-//       console.error("Canvas elementet ble ikke funnet.");
-//     }
-//   })
-//   .catch((error) => {
-//     console.error("Feil ved henting av data:", error);
-//   });
-
 async function animation(num) {
   for (let i = num - 250; i < num; i++) {
     numberElement.innerHTML = i;
