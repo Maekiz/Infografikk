@@ -61,6 +61,7 @@ fetch(url, {
     if (dataArray.length > 15) {
       const lastvalue = dataArray[15];
       const secondlastvalue = dataArray[14];
+      animation(lastvalue)
       numberElement.innerHTML = lastvalue;
       calculatePresentage(secondlastvalue, lastvalue);
     } else {
@@ -98,3 +99,15 @@ fetch(url, {
   .catch((error) => {
     console.error("Feil ved henting av data:", error);
   });
+
+
+async function animation(num) {
+  for (let i=num-250; i <num; i++){
+    numberElement.innerHTML = i
+    await delay(0.0000000001)
+  }
+}
+
+function delay(time) {
+  return new Promise(resolve => setTimeout(resolve, time));
+}
