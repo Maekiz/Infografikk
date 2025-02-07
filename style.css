@@ -1,3 +1,7 @@
-.front-image {
-  height: 120%;
+#myChart {
+  scale: 80%;
+}
+body h1 {
+  display: flex;
+  justify-content: center;
 }
