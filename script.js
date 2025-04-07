@@ -228,7 +228,7 @@ async function fetcData2() {
         label: "Førstegangsregistrerte elektriske personbiler månedlig",
         data: dataArray.map((d) => parseFloat(d)), // Sørg for at dataArray har tall
         fill: false,
-        borderColor: "rgb(51, 187, 85)",
+        borderColor: "#528C62",
         tension: 0.1,
       },
     ],
@@ -258,3 +258,4 @@ async function animation(num) {
 function delay(time) {
   return new Promise((resolve) => setTimeout(resolve, time));
 }
+Chart.defaults.font.size = 16;
